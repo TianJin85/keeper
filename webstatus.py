@@ -9,7 +9,10 @@
 import sys
 import io
 import urllib.parse
+import time
 import asyncio
+from urllib import request
+
 from pyppeteer import launch, errors
 from lxml import etree
 
@@ -27,46 +30,51 @@ class Web:
         :param url:
         :return:
         """
-        self.browser = await launch()   # 实例化浏览器
-        page = await self.browser.newPage()
+        self.browser = await launch({'headless': False})  # 实例化浏览器
+        self.page = await self.browser.newPage()
         try:
-            res = await page.goto(url)  # 请求网站
-            await page.screenshot({'path': './images/%s.png' % url.split("//")[1].replace("/", "_")})  # 截图保存到本地
+
+            res = await self.page.goto(url)  # 请求网站
+            await self.page.screenshot({'path': './images/%s.png' % url.split("//")[1].replace("/", "_")})  # 截图保存到本地
 
             self.result["status"] = res.status
             if res.status == 200:
                 pass
             elif res.status == 403:
 
-                html = etree.HTML(await page.content())
+                html = etree.HTML(await self.page.content())
                 src_href = html.xpath('//*[@id="mainFrame"]/@src')
 
                 if len(src_href):  # 网站备案未审核通过
 
                     title = html.xpath('/html/head/title/text()')
-                    await page.goto(src_href[0])
-                    next_page = etree.HTML(await page.content())
+                    await self.page.goto(src_href[0])
+                    next_page = etree.HTML(await self.page.content())
                     content = next_page.xpath('//p/text()')
                     self.result["title"] = title
                     self.result["err_content"] = content
             await self.browser.close()
-            print(self.result)
             return self.result
 
         except errors.TimeoutError as e:
-            raise e
-
-    async def close(self):
-        await self.browser.close()
+            print(e)
+        except errors.NetworkError as e:
+            print(e)
 
 
 if __name__ == '__main__':
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='UTF-8')
-    data_url = urllib.parse.unquote(sys.argv[1])
+    # sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='UTF-8')
+    # data_url = urllib.parse.unquote(sys.argv[1])
     web = Web()
-    # ls = ["https://www.baidu.com", "https://www.cnblogs.com", "https://lxml.de/tutorial.html", "https://www.jb51.net", "http://www.xnlp.gov.cn/", "http://www.dzxn.gov.cn/"]
+    data_url = ["http://www.jkqzs.cn/","http://www.gzredcross.org/","http://www.wowcan.cn/","http://boya.tooge.cn/","http://www.gzqc.com.cn/","http://www.cmfilm.cn/","http://www.hszx.com.cn/","http://qngz.tooge.cn/","http://www.cgisn.com/","http://www.gzph.org.cn/","http://www.gzzxpx.cn/","http://www.gzyouth.cn","http://www.gzqc.com.cn/","http://www.gzxkyy.com/","http://www.likeqf.com/"]
+    start = time.time()
     for url in data_url:
-        asyncio.get_event_loop().run_until_complete(web.start(url))
+        print(asyncio.get_event_loop().run_until_complete(web.start(url)))
+    end = time.time()
+    print(end - start)
+
+
+
 
 
 

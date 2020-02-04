@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 pyppeteer = "*"
 lxml = "*"
+paramiko = "*"
 
 [requires]
 python_version = "3.6"
