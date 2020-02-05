@@ -9,8 +9,10 @@
 import os
 import json
 
+import pandas as pd
 import paramiko
 import psutil as pu
+
 
 # 远程服务参数
 Port = 22
@@ -36,9 +38,9 @@ class Connect_server:
         # cat /proc/meminfo
         stdin, stdout, stderr = self.ssh.exec_command('df -h')
         ##读取信息
-        print(stdout.read().decode('utf-8'))
-        print(stderr.read().decode('utf-8'))
-
+        line_list = stdout.readlines()
+        resutl_df = pd.Series(line_list).to_frame('监控信息')
+        print(resutl_df[:1][:1])
         self.close_server()
 
     def close_server(self):
