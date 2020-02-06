@@ -9,12 +9,14 @@
 import os
 import json
 
-import pandas as pd
 import paramiko
 import psutil as pu
 
-
-from secure import Ip, Username, Password
+# 远程服务参数
+Port = 22
+Ip = '49.235.110.51'
+Username = 'ubuntu'
+Password = 'Tj307440205'
 
 
 class Connect_server:
@@ -34,9 +36,9 @@ class Connect_server:
         # cat /proc/meminfo
         stdin, stdout, stderr = self.ssh.exec_command('df -h')
         ##读取信息
-        line_list = stdout.readlines()
-        resutl_df = pd.Series(line_list).to_frame('监控信息')
-        print(resutl_df[:1][:])
+        print(stdout.read().decode('utf-8'))
+        print(stderr.read().decode('utf-8'))
+
         self.close_server()
 
     def close_server(self):
