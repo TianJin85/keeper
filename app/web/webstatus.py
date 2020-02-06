@@ -7,15 +7,11 @@
 @Software: PyCharm
 """
 import os
-import sys
-import io
-import urllib.parse
-import time
-import asyncio
-from urllib import request
 
 from pyppeteer import launch, errors
 from lxml import etree
+
+from app.logfile import logger
 
 
 class Web:
@@ -23,7 +19,8 @@ class Web:
     """
     browser = None
     page = None
-    result = {}
+    result = {"url": None, "status": None, "images_name": None }
+    images_path = None
 
     async def start(self, url: str):
         """
@@ -37,10 +34,13 @@ class Web:
 
             self.result["url"] = url
             res = await self.page.goto(url)  # 请求网站
-            await self.page.screenshot({'path': './images/%s.png' % url.split("//")[1].replace("/", "_")})  # 截图保存到本地
             self.result["status"] = res.status
-            if res.status == 200:
-                pass
+
+            if res.status == 200:   # 正常
+                self.images_path = './images/%s.png' % url.split("//")[1].replace("/", "")
+                await self.page.screenshot({'path': self.images_path, "fullPage": True, "width": 1080, "height": 1920})  # 截图保存到本地
+                self.result["images_name"] = '%s.png'%url.split("//")[1].replace("/", "")
+                logger.info("网站状态正常")
             elif res.status == 403:
 
                 html = etree.HTML(await self.page.content())
@@ -59,21 +59,19 @@ class Web:
 
         except errors.TimeoutError as e:
             self.result["status"] = "Timeout"
+            self.result["images_name"] = None
             await self.browser.close()
+            logger.debug("请求超时")
             return self.result
 
         except errors.NetworkError as e:
             self.result["status"] = "NetworkError"
+            self.result["images_name"] = None
             await self.browser.close()
+            logger.debug("网络异常")
             return self.result
 
 
-if __name__ == '__main__':
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='UTF-8')
-    data_url = urllib.parse.unquote(sys.argv[1])
-    web = Web()
-    # data_url = ["http://www.jkqzs.cn/", "http://www.gzredcross.org/", "http://www.wowcan.cn/","http://boya.tooge.cn/","http://www.gzqc.com.cn/","http://www.cmfilm.cn/","http://www.hszx.com.cn/","http://qngz.tooge.cn/","http://www.cgisn.com/","http://www.gzph.org.cn/","http://www.gzzxpx.cn/","http://www.gzyouth.cn","http://www.gzqc.com.cn/","http://www.gzxkyy.com/","http://www.likeqf.com/"]
-    print(asyncio.get_event_loop().run_until_complete(web.start(data_url)))
 
 
 

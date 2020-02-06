@@ -8,3 +8,7 @@
 """
 from loguru import logger
 
+logger.add(r"./app/logfile/webstatus.log", backtrace=True, diagnose=True, rotation="50 MB")
+
+
+
