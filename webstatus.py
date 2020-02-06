@@ -6,6 +6,7 @@
 @Email   : tianjincn@163.com
 @Software: PyCharm
 """
+import os
 import sys
 import io
 import urllib.parse
@@ -30,13 +31,13 @@ class Web:
         :param url:
         :return:
         """
-        self.browser = await launch({'headless': False})  # 实例化浏览器
+        self.browser = await launch({"userDataDir": os.getcwd()})  # 实例化浏览器
         self.page = await self.browser.newPage()
         try:
 
+            self.result["url"] = url
             res = await self.page.goto(url)  # 请求网站
             await self.page.screenshot({'path': './images/%s.png' % url.split("//")[1].replace("/", "_")})  # 截图保存到本地
-
             self.result["status"] = res.status
             if res.status == 200:
                 pass
@@ -57,22 +58,22 @@ class Web:
             return self.result
 
         except errors.TimeoutError as e:
-            print(e)
+            self.result["status"] = "Timeout"
+            await self.browser.close()
+            return self.result
+
         except errors.NetworkError as e:
-            print(e)
+            self.result["status"] = "NetworkError"
+            await self.browser.close()
+            return self.result
 
 
 if __name__ == '__main__':
-    # sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='UTF-8')
-    # data_url = urllib.parse.unquote(sys.argv[1])
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='UTF-8')
+    data_url = urllib.parse.unquote(sys.argv[1])
     web = Web()
-    data_url = ["http://www.jkqzs.cn/","http://www.gzredcross.org/","http://www.wowcan.cn/","http://boya.tooge.cn/","http://www.gzqc.com.cn/","http://www.cmfilm.cn/","http://www.hszx.com.cn/","http://qngz.tooge.cn/","http://www.cgisn.com/","http://www.gzph.org.cn/","http://www.gzzxpx.cn/","http://www.gzyouth.cn","http://www.gzqc.com.cn/","http://www.gzxkyy.com/","http://www.likeqf.com/"]
-    start = time.time()
-    for url in data_url:
-        print(asyncio.get_event_loop().run_until_complete(web.start(url)))
-    end = time.time()
-    print(end - start)
-
+    # data_url = ["http://www.jkqzs.cn/", "http://www.gzredcross.org/", "http://www.wowcan.cn/","http://boya.tooge.cn/","http://www.gzqc.com.cn/","http://www.cmfilm.cn/","http://www.hszx.com.cn/","http://qngz.tooge.cn/","http://www.cgisn.com/","http://www.gzph.org.cn/","http://www.gzzxpx.cn/","http://www.gzyouth.cn","http://www.gzqc.com.cn/","http://www.gzxkyy.com/","http://www.likeqf.com/"]
+    print(asyncio.get_event_loop().run_until_complete(web.start(data_url)))
 
 
 

@@ -14,11 +14,7 @@ import paramiko
 import psutil as pu
 
 
-# 远程服务参数
-Port = 22
-Ip = '49.235.110.51'
-Username = 'ubuntu'
-Password = 'Tj307440205'
+from secure import Ip, Username, Password
 
 
 class Connect_server:
@@ -40,7 +36,7 @@ class Connect_server:
         ##读取信息
         line_list = stdout.readlines()
         resutl_df = pd.Series(line_list).to_frame('监控信息')
-        print(resutl_df[:1][:1])
+        print(resutl_df[:1][:])
         self.close_server()
 
     def close_server(self):
