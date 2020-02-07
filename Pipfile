@@ -12,6 +12,7 @@ paramiko = "*"
 pandas = "*"
 numpy = "*"
 loguru = "*"
+ipdb = "*"
 
 [requires]
 python_version = "3.6"
