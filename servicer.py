@@ -12,8 +12,7 @@ import json
 import pandas as pd
 import paramiko
 import psutil as pu
-
-# 远程服务参数
+from secure import Ip, Username, Password
 
 
 class Connect_server:
@@ -32,9 +31,21 @@ class Connect_server:
         self.ssh.connect(self.ip, self.port, self.username, self.password)
         # top - b - n1
         # cat /proc/meminfo
+        # print(self.resource_sum("Size", self.command_server("df -h")))
+        stdin, stdout, stderr = self.ssh.exec_command("top - b - n1")
 
-        stdin, stdout, stderr = self.ssh.exec_command('df -h')
-        ##读取信息
+        print(stdout.readlines()[2].split("  "))
+
+        self.close_server()
+
+    def command_server(self, command: str):
+        """
+        提交命令到服务器
+        :param command:命令
+        :return: __resutl 数据
+        """
+        stdin, stdout, stderr = self.ssh.exec_command(command)
+        #读取信息
         # print(stdout.read().decode('utf-8'))
 
         resutl = [item.split() for item in stdout.readlines()]
@@ -43,13 +54,19 @@ class Connect_server:
         _columns = resutl_df.to_numpy()[0]
 
         _resutl = pd.DataFrame(_resutl_np, columns=_columns)
-        print(self.resource_sum("Size", _resutl))
-        self.close_server()
+
+        return _resutl
 
     def close_server(self):
         self.ssh.close()
 
     def resource_sum(self, columns_name, _resutl):
+        """
+        数据单位换算
+        :param columns_name:列名
+        :param _resutl: 数据
+        :return:以G为单位的数据
+        """
         USED_SUM = []
         for USED in _resutl[columns_name].to_list():
             for me in self.memory:
