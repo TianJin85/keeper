@@ -1,0 +1,6 @@
+pyppeteer = "*"
+lxml = "*"
+paramiko = "*"
+pandas = "*"
+numpy = "*"
+loguru = "*"

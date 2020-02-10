@@ -6,12 +6,18 @@
 @Email   : tianjincn@163.com
 @Software: PyCharm
 """
+import asyncio
+import io
 import os
+import sys
+import urllib
+from datetime import time
 
 from pyppeteer import launch, errors
 from lxml import etree
 
 from app.logfile import logger
+import json
 
 
 class Web:
@@ -19,7 +25,7 @@ class Web:
     """
     browser = None
     page = None
-    result = {"url": None, "status": None, "images_name": None }
+    result = {"url": None, "status": None, "images_name": None, "err_list": {"title": None, "err_content": None}}
     images_path = None
 
     async def start(self, url: str):
@@ -52,28 +58,36 @@ class Web:
                     await self.page.goto(src_href[0])
                     next_page = etree.HTML(await self.page.content())
                     content = next_page.xpath('//p/text()')
-                    self.result["title"] = title
-                    self.result["err_content"] = content
+                    self.result["err_lsit"]["title"] = title
+                    self.result["err_lsit"]["err_content"] = content
             await self.browser.close()
-            return self.result
+            print(json.dumps(self.result))
 
         except errors.TimeoutError as e:
             self.result["status"] = "Timeout"
             self.result["images_name"] = None
             await self.browser.close()
             logger.debug("请求超时")
-            return self.result
+            print(self.result)
 
         except errors.NetworkError as e:
             self.result["status"] = "NetworkError"
             self.result["images_name"] = None
             await self.browser.close()
             logger.debug("网络异常")
-            return self.result
+            print(self.result)
 
 
+if __name__ == '__main__':
+    # sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='UTF-8')
+    # data_url = urllib.parse.unquote(sys.argv[1])
+    # web = Web()
+    # asyncio.get_event_loop().run_until_complete(web.start(data_url))
 
-
-
-
-
+    data_url = ["http://www.jkqzs.cn/", "http://www.gzredcross.org/", "http://www.wowcan.cn/", "http://boya.tooge.cn/",
+                "http://www.gzqc.com.cn/", "http://www.cmfilm.cn/", "http://www.hszx.com.cn/", "http://qngz.tooge.cn/",
+                "http://www.cgisn.com/", "http://www.gzph.org.cn/", "http://www.gzzxpx.cn/", "http://www.gzyouth.cn",
+                "http://www.gzqc.com.cn/", "http://www.gzxkyy.com/", "http://www.likeqf.com/"]
+    for url in data_url:
+        web = Web()
+        asyncio.get_event_loop().run_until_complete(web.start(url))

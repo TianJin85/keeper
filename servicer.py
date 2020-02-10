@@ -31,14 +31,30 @@ class Connect_server:
         self.ssh.connect(self.ip, self.port, self.username, self.password)
         # top - b - n1
         # cat /proc/meminfo
-        # print(self.resource_sum("Size", self.command_server("df -h")))
-        stdin, stdout, stderr = self.ssh.exec_command("top - b - n1")
+        self.get_resource()
 
-        print(stdout.readlines()[2].split("  "))
-
+    def get_resource(self):
+        print(self.resource_sum("Size", self.get_disk("df -h")))
+        self.get_memory_cup()
         self.close_server()
 
-    def command_server(self, command: str):
+    def get_memory_cup(self):
+
+        stdin, stdout, stderr = self.ssh.exec_command("top - b - n1")
+
+        server_cup = stdout.readlines()[2].split("  ")    # 获取CPU信息
+
+        us = server_cup[1]
+
+        if "us" in us:
+            us.replace("us", "")
+            if "%" in us:
+                pass
+            else:
+                us += "%"
+            print(us)
+
+    def get_disk(self, command: str):
         """
         提交命令到服务器
         :param command:命令
