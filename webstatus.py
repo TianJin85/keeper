@@ -11,7 +11,6 @@ import io
 import os
 import sys
 import urllib
-from datetime import time
 
 from pyppeteer import launch, errors
 from lxml import etree
@@ -36,6 +35,10 @@ class Web:
         """
         self.browser = await launch({"userDataDir": os.getcwd()})  # 实例化浏览器
         self.page = await self.browser.newPage()
+        if "http://" in url or "https://" in url:
+            pass
+        else:
+            url = "".join(["http://", url])
         try:
 
             self.result["url"] = url
@@ -58,8 +61,8 @@ class Web:
                     await self.page.goto(src_href[0])
                     next_page = etree.HTML(await self.page.content())
                     content = next_page.xpath('//p/text()')
-                    self.result["err_lsit"]["title"] = title
-                    self.result["err_lsit"]["err_content"] = content
+                    self.result["err_list"]["title"] = title
+                    self.result["err_list"]["err_content"] = content
             await self.browser.close()
             print(json.dumps(self.result))
 
@@ -67,15 +70,15 @@ class Web:
             self.result["status"] = "Timeout"
             self.result["images_name"] = None
             await self.browser.close()
-            logger.debug("请求超时")
-            print(self.result)
+            logger.debug("请求超时:%s"%e)
+            print(json.dumps(self.result))
 
         except errors.NetworkError as e:
             self.result["status"] = "NetworkError"
             self.result["images_name"] = None
             await self.browser.close()
-            logger.debug("网络异常")
-            print(self.result)
+            logger.debug("网络异常:%s"%e)
+            print(json.dumps(self.result))
 
 
 if __name__ == '__main__':
@@ -84,10 +87,10 @@ if __name__ == '__main__':
     # web = Web()
     # asyncio.get_event_loop().run_until_complete(web.start(data_url))
 
-    data_url = ["http://www.jkqzs.cn/", "http://www.gzredcross.org/", "http://www.wowcan.cn/", "http://boya.tooge.cn/",
-                "http://www.gzqc.com.cn/", "http://www.cmfilm.cn/", "http://www.hszx.com.cn/", "http://qngz.tooge.cn/",
-                "http://www.cgisn.com/", "http://www.gzph.org.cn/", "http://www.gzzxpx.cn/", "http://www.gzyouth.cn",
-                "http://www.gzqc.com.cn/", "http://www.gzxkyy.com/", "http://www.likeqf.com/"]
+    data_url = ["http://www.jkqzs.cn/", "www.gzredcross.org/", "http://www.wowcan.cn/", "http://boya.tooge.cn/",
+                "http://www.gzqc.com.cn/", "www.cmfilm.cn/", "http://www.hszx.com.cn/", "http://qngz.tooge.cn/",
+                "http://www.cgisn.com/", "www.gzph.org.cn/", "http://www.gzzxpx.cn/", "http://www.gzyouth.cn",
+                "http://www.gzqc.com.cn/", "www.gzxkyy.com/", "http://www.likeqf.com/"]
     for url in data_url:
         web = Web()
         asyncio.get_event_loop().run_until_complete(web.start(url))
