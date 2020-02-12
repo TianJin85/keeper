@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 """
-@File    : webstatus.py
+@File    : get_status.py
 @Time    :  2020/1/21 17:34
 @Author  : Tianjin
 @Email   : tianjincn@163.com
@@ -33,7 +33,7 @@ class Web:
         :param url:
         :return:
         """
-        self.browser = await launch({"userDataDir": os.getcwd()})  # 实例化浏览器
+        self.browser = await launch({"userDataDir": os.path.join(os.getcwd(), "app", "spider", "DataDir")})  # 实例化浏览器
         self.page = await self.browser.newPage()
         if "http://" in url or "https://" in url:
             pass
@@ -46,7 +46,8 @@ class Web:
             self.result["status"] = res.status
 
             if res.status == 200:   # 正常
-                self.images_path = './images/%s.png' % url.split("//")[1].replace("/", "")
+                path = os.path.join(os.getcwd(), "app", "images")
+                self.images_path = path+'/%s.png' % url.split("//")[1].replace("/", "")
                 await self.page.screenshot({'path': self.images_path, "fullPage": True, "width": 1080, "height": 1920})  # 截图保存到本地
                 self.result["images_name"] = '%s.png'%url.split("//")[1].replace("/", "")
                 logger.info("网站状态正常")
@@ -81,16 +82,3 @@ class Web:
             print(json.dumps(self.result))
 
 
-if __name__ == '__main__':
-    # sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='UTF-8')
-    # data_url = urllib.parse.unquote(sys.argv[1])
-    # web = Web()
-    # asyncio.get_event_loop().run_until_complete(web.start(data_url))
-
-    data_url = ["http://www.jkqzs.cn/", "www.gzredcross.org/", "http://www.wowcan.cn/", "http://boya.tooge.cn/",
-                "http://www.gzqc.com.cn/", "www.cmfilm.cn/", "http://www.hszx.com.cn/", "http://qngz.tooge.cn/",
-                "http://www.cgisn.com/", "www.gzph.org.cn/", "http://www.gzzxpx.cn/", "http://www.gzyouth.cn",
-                "http://www.gzqc.com.cn/", "www.gzxkyy.com/", "http://www.likeqf.com/"]
-    for url in data_url:
-        web = Web()
-        asyncio.get_event_loop().run_until_complete(web.start(url))
