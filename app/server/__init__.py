@@ -6,5 +6,36 @@
 @Email   : tianjincn@163.com
 @Software: PyCharm
 """
+import paramiko
 from loguru import logger
+
 logger.add(r"../app/logfile/get_server_resource.log", backtrace=True, diagnose=True, rotation="50 MB")
+
+
+class Connect_server:
+
+    ssh = None
+
+    def __init__(self, ip, username, password, port=22):
+        self.ip = ip
+        self.username = username
+        self.password = password
+        self.port = port
+
+    def open_server(self):
+        self.ssh = paramiko.SSHClient()
+        self.ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        try:
+
+            self.ssh.connect(self.ip, self.port, self.username, self.password)
+        except paramiko.ssh_exception.AuthenticationException as e:
+            print(e)
+        except TimeoutError as e:
+            print(e)
+        except paramiko.ssh_exception.SSHException as e:
+            print(e)
+
+        return self.ssh
+
+    def close_server(self):
+        self.ssh.close()

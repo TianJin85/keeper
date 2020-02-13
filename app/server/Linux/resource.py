@@ -10,37 +10,19 @@ import json
 
 
 import pandas as pd
-import paramiko
 
 
-class Connect_server:
-    ssh = None
-    memory = ["T", "G", "M", "K"]
-    result = {
-        "disk": {"磁盘大小": None, "使用大小": None, "未用大小": None, "使用率": None},
-        "memory": {"内存总量": None, "使用内存": None, "空闲内存": None, "使用率": None },
-        "cpu": {"用户占用": None, "内核占用": None, "空闲空间": None, "使用率": None}
-    }
+class Linux:
 
-    def __init__(self, ip, username, password, port=22):
-        self.ip = ip
-        self.username = username
-        self.password = password
-        self.port = port
+    def __init__(self, ssh):
+        self.memory = ["T", "G", "M", "K"]
+        self.result = {
+            "disk": {"totle": None, "use": None, "remnan": None, "rate": None},
+            "memory": {"totle": None, "use": None, "remnan": None, "rate": None},
+            "cpu": {"us": None, "sy": None, "id": None, "rate": None}
+        }
+        self.ssh = ssh
 
-    def open_server(self):
-        self.ssh = paramiko.SSHClient()
-        self.ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        try:
-
-            self.ssh.connect(self.ip, self.port, self.username, self.password)
-            self.get_resource()
-        except paramiko.ssh_exception.AuthenticationException as e:
-            print(e)
-        except TimeoutError as e:
-            print(e)
-        except paramiko.ssh_exception.SSHException as e:
-            print(e)
 
         # top - b - n1
         # cat /proc/meminfo
@@ -67,10 +49,11 @@ class Connect_server:
             use = int(item.replace("%", ""))
             use_list.append(use)
         use_disk = sum(use_list)
-        self.result["disk"]["磁盘大小"] = size_disk
-        self.result["disk"]["使用大小"] = avail_disk
-        self.result["disk"]["未用大小"] = used_disk
-        self.result["disk"]["使用率"] = use_disk
+
+        self.result["disk"]["totle"] = size_disk
+        self.result["disk"]["use"] = used_disk
+        self.result["disk"]["remnan"] = avail_disk
+        self.result["disk"]["rate"] = use_disk
         # 获取cpu信息以及内存信息
         cpu_memory = self.get_memory_cup()
 
@@ -78,8 +61,6 @@ class Connect_server:
         self.dispose_cpu(cpu_memory)
 
         print(json.dumps(self.result))
-
-        self.close_server()
 
     def get_memory_cup(self):
         """
@@ -120,10 +101,10 @@ class Connect_server:
             id = float(id)
 
         ur = 100 - id
-        self.result["cpu"]["用户占用"] = us
-        self.result["cpu"]["内核占用"] = sy
-        self.result["cpu"]["空闲空间"] = id
-        self.result["cpu"]["使用率"] = ur
+        self.result["cpu"]["us"] = us
+        self.result["cpu"]["sy"] = sy
+        self.result["cpu"]["id"] = id
+        self.result["cpu"]["rate"] = ur
 
     def dispose_memory(self, cpu_message):
         # ['Mem:   8174436k total', '  1942672k used', '  6231764k free', '   401896k buffers\n']
@@ -153,10 +134,10 @@ class Connect_server:
 
                 free = float(free)/(1024*1024)
         usage_rate = total/free
-        self.result["memory"]["内存总量"] = total
-        self.result["memory"]["使用内存"] = used
-        self.result["memory"]["空闲内存"] = free
-        self.result["memory"]["使用率"] = usage_rate
+        self.result["memory"]["totle"] = total
+        self.result["memory"]["use"] = used
+        self.result["memory"]["remnan"] = free
+        self.result["memory"]["rate"] = usage_rate
         return True
 
     def get_disk(self, command: str):
@@ -178,9 +159,6 @@ class Connect_server:
 
         return _resutl
 
-    def close_server(self):
-        self.ssh.close()
-
     def resource_sum(self, columns_name, _resutl):
         """
         数据单位换算
@@ -195,7 +173,7 @@ class Connect_server:
                 if me in USED:                  # 单位换算一律换成G为单位
                     _me = USED.split(me)[0]
                     if me == "T":
-                        USED_SUM.append(float(_me) * 1012)
+                        USED_SUM.append(float(_me) * 1024)
                     elif me == "G":
                         USED_SUM.append(float(_me))
                     elif me == "M":
