@@ -46,9 +46,10 @@ class Web:
             self.result["status"] = res.status
 
             if res.status == 200:   # 正常
-                path = os.path.join(os.getcwd(), "app", "images")
-                self.images_path = path+'/%s.png' % url.split("//")[1].replace("/", "")
-                await self.page.screenshot({'path': self.images_path, "fullPage": True, "width": 1080, "height": 1920})  # 截图保存到本地
+                path = os.path.join(os.getcwd(), "app", "images", '%s.png' % url.split("//")[1].replace("/", ""))
+                print(path)
+                # self.images_path = path+'/%s.png' % url.split("//")[1].replace("/", "")
+                await self.page.screenshot({'path': path, "fullPage": True, "width": 1080, "height": 1920})  # 截图保存到本地
                 self.result["images_name"] = '%s.png'%url.split("//")[1].replace("/", "")
                 logger.info("网站状态正常")
             elif res.status == 403:

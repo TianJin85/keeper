@@ -308,3 +308,5 @@
 2020-02-12 23:28:17.989 | DEBUG    | app.spider.get_status:start:74 - 请求超时:Navigation Timeout Exceeded: 30000 ms exceeded.
 2020-02-12 23:28:23.349 | INFO     | app.spider.get_status:start:53 - 网站状态正常
 2020-02-13 15:45:30.561 | INFO     | app.spider.get_status:start:53 - 网站状态正常
+2020-02-13 17:28:51.283 | INFO     | app.spider.get_status:start:53 - 网站状态正常
+2020-02-13 17:35:03.731 | INFO     | app.spider.get_status:start:54 - 网站状态正常
