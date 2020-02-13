@@ -6,11 +6,8 @@
 @Email   : tianjincn@163.com
 @Software: PyCharm
 """
-import asyncio
-import io
 import os
-import sys
-import urllib
+
 
 from pyppeteer import launch, errors
 from lxml import etree
@@ -47,7 +44,7 @@ class Web:
 
             if res.status == 200:   # 正常
                 path = os.path.join(os.getcwd(), "app", "images", '%s.png' % url.split("//")[1].replace("/", ""))
-                print(path)
+
                 # self.images_path = path+'/%s.png' % url.split("//")[1].replace("/", "")
                 await self.page.screenshot({'path': path, "fullPage": True, "width": 1080, "height": 1920})  # 截图保存到本地
                 self.result["images_name"] = '%s.png'%url.split("//")[1].replace("/", "")
