@@ -15,6 +15,9 @@ from lxml import etree
 from app.logfile import logger
 import json
 
+from setting import on_line
+
+
 
 class Web:
     """
@@ -43,10 +46,15 @@ class Web:
             self.result["status"] = res.status
 
             if res.status == 200:   # 正常
-                path = os.path.join(os.getcwd(), "app", "images", '%s.png' % url.split("//")[1].replace("/", ""))
+                if on_line:
+                    self.images_path = os.path.join(os.getcwd(), "python/app", "images",
+                                                    '%s.png' % url.split("//")[1].replace("/", ""))
+                else:
+                    self.images_path = os.path.join(os.getcwd(), "app", "images",
+                                                    '%s.png' % url.split("//")[1].replace("/", ""))
+                await self.page.screenshot(
+                    {'path': self.images_path, "fullPage": True, "width": 1080, "height": 1920})  # 截图保存到本地
 
-                # self.images_path = path+'/%s.png' % url.split("//")[1].replace("/", "")
-                await self.page.screenshot({'path': path, "fullPage": True, "width": 1080, "height": 1920})  # 截图保存到本地
                 self.result["images_name"] = '%s.png'%url.split("//")[1].replace("/", "")
                 logger.info("网站状态正常")
             elif res.status == 403:
@@ -58,7 +66,8 @@ class Web:
 
                     title = html.xpath('/html/head/title/text()')
                     await self.page.goto(src_href[0])
-                    next_page = etree.HTML(await self.page.content())
+                    xpat_row = await self.page.content()
+                    next_page = etree.HTML(xpat_row)
                     content = next_page.xpath('//p/text()')
                     self.result["err_list"]["title"] = title
                     self.result["err_list"]["err_content"] = content
