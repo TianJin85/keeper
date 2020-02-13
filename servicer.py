@@ -10,11 +10,16 @@ import io
 import sys
 import urllib
 
-from app.server.Linux.resource import Connect_server
+from app.server import Connect_server
+from app.server.Linux.resource import Linux
 
 if __name__ == '__main__':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='UTF-8')
-    data = dict(urllib.parse.unquote(sys.argv[1]))
+    ip = urllib.parse.unquote(sys.argv[1])
+    username = urllib.parse.unquote(sys.argv[2])
+    password = urllib.parse.unquote(sys.argv[3])
 
-    conn = Connect_server(ip=data["ip"], username=data["username"], password=data["password"])
-    conn.open_server()
+    conn = Connect_server(ip=ip, username=username, password=password)
+    shh = conn.open_server()
+    linux = Linux(ssh=shh)
+    linux.get_resource()
