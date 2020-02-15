@@ -20,6 +20,6 @@ if __name__ == '__main__':
     password = urllib.parse.unquote(sys.argv[3])
 
     conn = Connect_server(ip=ip, username=username, password=password)
-    shh = conn.open_server()
-    linux = Linux(ssh=shh)
+    ssh = conn.open_server()
+    linux = Linux(ssh=ssh)
     linux.get_resource()

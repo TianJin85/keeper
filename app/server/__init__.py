@@ -39,3 +39,31 @@ class Connect_server:
 
     def close_server(self):
         self.ssh.close()
+
+
+class Connect_sftp:
+
+    sftp = None
+    transport = None
+
+    def __init__(self, ip, username, password, port=22):
+        self.ip = ip
+        self.username = username
+        self.password = password
+        self.port = port
+
+    def conn_sftp(self):
+        try:
+            self.transport = paramiko.Transport((self.ip, 22))
+            self.transport.connect(username=self.username, password=self.password)
+            self.sftp = paramiko.SFTPClient.from_transport(self.transport)
+        except paramiko.ssh_exception.AuthenticationException as e:
+            print(e)
+        except TimeoutError as e:
+            print(e)
+        except paramiko.ssh_exception.SSHException as e:
+            print(e)
+        return self.sftp
+
+    def close_sftp(self):
+        self.transport.close()

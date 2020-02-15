@@ -6,7 +6,11 @@
 @Email   : tianjincn@163.com
 @Software: PyCharm
 """
+import os
+
 import paramiko
+
+from app.server import Connect_server
 
 
 class Windows:
@@ -14,11 +18,30 @@ class Windows:
     def __init__(self, ssh):
         self.ssh = ssh
 
-    def get_cpu(self):
-        pass
+    def command(self, command="if exist winInfo.py (echo True ) else (echo False)"):
+        stdin, stdout, stderr = self.ssh.exec_command(command)
+        return stdout.readlines()
 
-    def get_disk(self):
-        pass
+    def get_path(self):
 
-    def get_memory(self):
-        pass
+        return self.command("chdir")
+
+    def put_file(self, sftp, path):
+
+        remotepath = os.path.join(path, "winInfo.py")
+
+        localpath = os.path.join(os.getcwd(), "app", "server", "Windows", "winInfo.py")
+
+        sftp.put(localpath, remotepath)
+
+    def main(self):
+        self.exist_file()
+
+
+    
+
+
+
+
+
+
