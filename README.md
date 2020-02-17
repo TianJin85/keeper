@@ -39,7 +39,7 @@
     ```json
     {"url": "http://www.jkqzs.cn/", "status": 200, "images_name": "www.jkqzs.cn.png", "err_list": {"title": null, "err_content": null}}
     ```
-  ![](app/images/Snipaste_2020-02-17_11-28-50.jpg)
+  ![](https://github.com/TianJin85/python/master/app/images/Snipaste_2020-02-17_11-28-50.jpg)
 - 注意事项：
     - 1.图片是根据是URL连接拼接而成。
     - 2.爬虫效率问题。
