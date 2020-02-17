@@ -11,6 +11,7 @@ import os
 import paramiko
 
 from app.server import Connect_server
+from setting import on_line
 
 
 class Windows:
@@ -30,7 +31,10 @@ class Windows:
 
         remotepath = os.path.join(path, "winInfo.py")
 
-        localpath = os.path.join(os.getcwd(), "app", "server", "Windows", "winInfo.py")
+        if on_line:
+            localpath = os.path.join(os.getcwd(), "python", "app", "server", "Windows", "winInfo.py")
+        else:
+            localpath = os.path.join(os.getcwd(), "app", "server", "Windows", "winInfo.py")
 
         sftp.put(localpath, remotepath)
 

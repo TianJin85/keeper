@@ -6,14 +6,19 @@
 @Email   : tianjincn@163.com
 @Software: PyCharm
 """
+import io
 import os
+import sys
+import urllib
 
 from app.server import Connect_server, Connect_sftp
 from app.server.Windows.resource import Windows
-from secure import ip, username, password
-
 
 if __name__ == '__main__':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='UTF-8')
+    ip = urllib.parse.unquote(sys.argv[1])
+    username = urllib.parse.unquote(sys.argv[2])
+    password = urllib.parse.unquote(sys.argv[3])
 
     conn = Connect_server(ip=ip, username=username, password=password)
     ssh = conn.open_server()        # 获得ssh
@@ -29,9 +34,9 @@ if __name__ == '__main__':
         conn.close_sftp()   # 关闭连接
 
     else:
-        print("文件存在")
+
+        print(win.command("python winInfo.py"))
 
     print(win.command("python winInfo.py"))
-
 
 

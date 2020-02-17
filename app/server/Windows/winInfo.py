@@ -29,7 +29,7 @@ class WinInfo:
         print(json.dumps(self.result))
 
     def get_cpu(self):
-            self.result["cpu"]["totle"] = pu.cpu_count()
+            self.result["cpu"]["total"] = pu.cpu_count()
             self.result["cpu"]["percent"] = pu.cpu_percent(interval=1)
 
     def get_disk(self):
