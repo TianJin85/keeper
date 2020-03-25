@@ -19,7 +19,7 @@ if __name__ == '__main__':
     web = Web()
     asyncio.get_event_loop().run_until_complete(web.start(data_url))
 
-    # data_url = ["http://www.jkqzs.cn/", "www.gzredcross.org/", "http://www.wowcan.cn/", "http://boya.tooge.cn/",
+    # data_url = ["http://www.jkqzs.cn/", "http://www.tzxn.gov.cn/", "http://www.wowcan.cn/", "http://boya.tooge.cn/",
     #             "http://www.gzqc.com.cn/", "www.cmfilm.cn/", "http://www.hszx.com.cn/", "http://qngz.tooge.cn/",
     #             "http://www.cgisn.com/", "www.gzph.org.cn/", "http://www.gzzxpx.cn/", "http://www.gzyouth.cn",
     #             "http://www.gzqc.com.cn/", "www.gzxkyy.com/", "http://www.likeqf.com/"]

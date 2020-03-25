@@ -1,8 +1,348 @@
-[0217/111400.454:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
-[0217/111405.617:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
-[0217/111409.727:INFO:CONSOLE(867)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://s13.cnzz.com/stat.php?id=1270432690, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzredcross.org/ (867)
-[0217/111409.727:INFO:CONSOLE(867)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://s13.cnzz.com/stat.php?id=1270432690, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzredcross.org/ (867)
-[0217/111409.777:INFO:CONSOLE(17)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://c.cnzz.com/core.php?web_id=1270432690&t=z, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://s13.cnzz.com/stat.php?id=1270432690 (17)
-[0217/111409.777:INFO:CONSOLE(17)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://c.cnzz.com/core.php?web_id=1270432690&t=z, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://s13.cnzz.com/stat.php?id=1270432690 (17)
-[0217/111409.870:INFO:CONSOLE(870)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://bszs.conac.cn/interact?method=doGet&id=FB79801A1772BE6FE04019AC05286BCD, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzredcross.org/ (870)
-[0217/111409.870:INFO:CONSOLE(870)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://bszs.conac.cn/interact?method=doGet&id=FB79801A1772BE6FE04019AC05286BCD, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzredcross.org/ (870)
+[0325/122223.751:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122227.681:INFO:CONSOLE(867)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://s13.cnzz.com/stat.php?id=1270432690, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzredcross.org/ (867)
+[0325/122227.682:INFO:CONSOLE(867)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://s13.cnzz.com/stat.php?id=1270432690, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzredcross.org/ (867)
+[0325/122227.739:INFO:CONSOLE(17)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://c.cnzz.com/core.php?web_id=1270432690&t=z, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://s13.cnzz.com/stat.php?id=1270432690 (17)
+[0325/122227.740:INFO:CONSOLE(17)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://c.cnzz.com/core.php?web_id=1270432690&t=z, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://s13.cnzz.com/stat.php?id=1270432690 (17)
+[0325/122227.891:INFO:CONSOLE(870)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://bszs.conac.cn/interact?method=doGet&id=FB79801A1772BE6FE04019AC05286BCD, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzredcross.org/ (870)
+[0325/122227.892:INFO:CONSOLE(870)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://bszs.conac.cn/interact?method=doGet&id=FB79801A1772BE6FE04019AC05286BCD, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzredcross.org/ (870)
+[0325/122237.483:INFO:CONSOLE(873)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/000/0000/40707141/CA240000000407071410001.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzredcross.org/ (873)
+[0325/122254.963:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122255.008:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122255.008:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122255.008:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122255.008:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122259.989:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122300.035:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122300.035:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122300.035:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122300.035:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122303.491:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122303.561:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122303.561:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122303.561:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122303.561:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122309.791:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show&siteid=1&id=37&spaceid=14' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122312.029:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=15' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122312.030:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=16' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122312.119:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=17' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122312.120:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=11' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122312.125:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=18' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122312.125:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=19' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122312.126:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=20' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122314.565:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122314.655:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122314.655:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122314.655:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122314.655:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122324.883:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122324.931:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122324.932:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122324.932:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122324.932:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122326.008:INFO:CONSOLE(1297)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/362/2228/60012542/CA243622228600125420001.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.hszx.com.cn/ (1297)
+[0325/122326.014:INFO:CONSOLE(1297)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/362/2228/60012542/CA243622228600125420001.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.hszx.com.cn/ (1297)
+[0325/122333.839:INFO:CONSOLE(3)] "Uncaught TypeError: Cannot read property 'getElementsByTagName' of null", source: http://www.hszx.com.cn/Public/Home/Js/js.js (3)
+[0325/122336.125:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122336.225:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122336.225:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122336.225:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122336.225:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122356.767:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122356.820:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122356.820:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122356.820:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122356.820:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122415.463:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122415.895:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122415.895:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122415.895:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122415.895:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122418.012:INFO:CONSOLE(364)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/000/0000/40192204/CA240000000401922040001.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzph.org.cn/ (364)
+[0325/122418.016:INFO:CONSOLE(364)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/000/0000/40192204/CA240000000401922040001.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzph.org.cn/ (364)
+[0325/122418.121:INFO:CONSOLE(473)] "Uncaught TypeError: Cannot read property 'style' of null", source: http://www.gzph.org.cn/ (473)
+[0325/122419.988:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122420.373:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122420.373:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122420.373:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122420.373:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122424.765:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122424.811:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122424.811:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122424.811:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122424.811:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122425.935:INFO:CONSOLE(583)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/000/0000/40189915/CA240000000401899150002.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzyouth.cn/home/column/index (583)
+[0325/122425.936:INFO:CONSOLE(583)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/000/0000/40189915/CA240000000401899150002.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzyouth.cn/home/column/index (583)
+[0325/122427.746:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122427.802:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122427.802:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122427.802:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122427.802:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122432.672:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show&siteid=1&id=37&spaceid=14' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122435.066:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=15' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122435.068:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=16' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122435.069:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=17' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122435.144:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=11' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122435.149:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=18' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122435.150:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=19' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122435.150:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=20' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122437.027:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122437.081:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122437.081:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122437.081:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122437.081:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122440.433:INFO:CONSOLE(2)] "Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened.", source: https://connect.qq.com/widget/shareqq/loader/loader.js?_=1585110279509 (2)
+[0325/122447.868:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122447.932:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122447.933:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122447.933:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122447.933:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122237.485:INFO:CONSOLE(873)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/000/0000/40707141/CA240000000407071410001.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzredcross.org/ (873)
+[0325/122452.259:INFO:CONSOLE(1022)] "Uncaught SyntaxError: Unexpected token ;", source: http://www.gzredcross.org/ (1022)
+[0325/122526.895:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122526.946:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122526.946:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122526.946:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122526.947:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122533.642:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122533.689:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122533.689:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122533.689:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122533.689:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122535.459:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122535.508:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122535.508:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122535.508:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122535.508:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122540.051:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122540.094:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122540.094:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122540.094:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122540.094:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122542.670:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122542.716:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122542.716:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122542.716:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122542.716:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122544.919:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=15' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122544.922:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=16' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122544.924:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=17' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122544.925:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=11' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122544.928:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=18' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122544.929:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=19' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122544.930:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=20' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122547.422:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show&siteid=1&id=37&spaceid=14' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/122550.838:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122550.936:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122550.936:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122550.936:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122550.936:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122558.850:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122558.901:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122558.901:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122558.901:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122558.901:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/122600.324:INFO:CONSOLE(1297)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/362/2228/60012542/CA243622228600125420001.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.hszx.com.cn/ (1297)
+[0325/122600.327:INFO:CONSOLE(1297)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/362/2228/60012542/CA243622228600125420001.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.hszx.com.cn/ (1297)
+[0325/122940.785:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/122940.838:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/122940.838:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/122940.838:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/122940.838:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123135.637:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123135.693:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123135.693:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123135.693:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123135.693:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123140.070:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123140.121:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123140.121:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123140.121:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123140.121:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123142.834:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123142.883:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123142.884:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123142.884:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123142.884:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123147.788:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123147.843:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123147.843:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123147.843:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123147.844:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123657.189:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123657.242:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123657.243:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123657.243:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123657.243:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123802.581:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123802.626:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123802.626:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123802.627:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123802.627:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123818.290:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123818.349:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123818.349:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123818.349:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123818.349:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123822.114:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123822.163:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123822.163:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123822.163:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123822.163:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123823.954:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123824.003:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123824.003:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123824.003:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123824.003:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123828.165:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123828.210:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123828.210:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123828.210:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123828.211:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123830.782:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123830.840:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123830.840:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123830.840:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123830.840:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123834.664:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=15' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/123834.666:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=16' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/123834.718:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=17' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/123834.720:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=11' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/123834.722:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=18' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/123834.722:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=19' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/123834.723:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=20' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/123837.169:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show&siteid=1&id=37&spaceid=14' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/123839.497:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123839.543:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123839.543:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123839.543:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123839.543:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123847.248:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123847.292:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123847.292:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123847.292:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123847.293:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123848.546:INFO:CONSOLE(1297)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/362/2228/60012542/CA243622228600125420001.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.hszx.com.cn/ (1297)
+[0325/123848.547:INFO:CONSOLE(1297)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/362/2228/60012542/CA243622228600125420001.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.hszx.com.cn/ (1297)
+[0325/123856.203:INFO:CONSOLE(3)] "Uncaught TypeError: Cannot read property 'getElementsByTagName' of null", source: http://www.hszx.com.cn/Public/Home/Js/js.js (3)
+[0325/123858.518:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123858.601:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123858.601:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123858.601:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123858.601:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123911.608:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123911.764:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123911.764:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123911.764:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123911.765:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123943.226:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123943.285:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123943.285:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123943.285:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123943.285:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123944.213:INFO:CONSOLE(364)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/000/0000/40192204/CA240000000401922040001.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzph.org.cn/ (364)
+[0325/123944.213:INFO:CONSOLE(364)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/000/0000/40192204/CA240000000401922040001.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzph.org.cn/ (364)
+[0325/123944.381:INFO:CONSOLE(473)] "Uncaught TypeError: Cannot read property 'style' of null", source: http://www.gzph.org.cn/ (473)
+[0325/123947.108:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/123947.159:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/123947.159:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/123947.159:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/123947.159:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/123950.862:ERROR:session_storage_context_mojo.cc(917)] Got error when openning: 1
+[0325/123954.007:ERROR:session_storage_context_mojo.cc(917)] Got error when openning: 1
+[0325/124004.010:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/124004.074:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/124004.074:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/124004.074:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/124004.074:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/124006.890:INFO:CONSOLE(583)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/000/0000/40189915/CA240000000401899150002.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzyouth.cn/home/column/index (583)
+[0325/124006.894:INFO:CONSOLE(583)] "A parser-blocking, cross site (i.e. different eTLD+1) script, http://dcs.conac.cn/js/24/000/0000/40189915/CA240000000401899150002.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.", source: http://www.gzyouth.cn/home/column/index (583)
+[0325/124009.599:ERROR:session_storage_context_mojo.cc(917)] Got error when openning: 1
+[0325/124012.620:ERROR:session_storage_context_mojo.cc(917)] Got error when openning: 1
+[0325/124021.559:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/124021.617:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/124021.617:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/124021.617:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/124021.617:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/124023.876:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=15' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/124023.877:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=16' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/124023.879:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=17' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/124023.995:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=11' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/124023.996:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=18' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/124024.080:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=19' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/124024.081:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show_poster&id=20' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/124026.585:INFO:CONSOLE(0)] "Refused to execute script from 'http://www.gzqc.com.cn/index.php?m=poster&c=index&a=show&siteid=1&id=37&spaceid=14' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.", source: http://www.gzqc.com.cn/ (0)
+[0325/124029.051:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/124029.108:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/124029.108:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/124029.108:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/124029.108:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/124033.146:INFO:CONSOLE(2)] "Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened.", source: https://connect.qq.com/widget/shareqq/loader/loader.js?_=1585111232109 (2)
+[0325/124044.113:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/124044.249:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/124044.249:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/124044.249:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/124044.249:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/133725.976:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133725.977:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133725.977:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133726.091:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133726.092:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133726.097:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133726.131:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133726.131:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133726.142:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133726.519:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133726.552:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133726.555:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133726.636:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133726.638:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133726.674:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133730.988:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133730.991:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133730.995:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133731.098:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133731.099:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133731.104:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133731.142:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133731.147:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133731.171:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133731.525:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133731.559:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133731.562:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133731.645:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133731.646:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/133731.679:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/163856.527:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/163856.641:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/163856.642:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/163856.642:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/163856.642:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/163910.020:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/163910.043:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/163910.043:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/163910.043:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/163910.043:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/163919.820:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0325/163919.877:ERROR:cache_util_win.cc(19)] Unable to move the cache: 5
+[0325/163919.877:ERROR:cache_util.cc(140)] Unable to move cache folder D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\GPUCache to D:\360MoveData\Users\asus\Desktop\项目文件\星空间\python\app\spider\DataDir\Default\old_GPUCache_000
+[0325/163919.877:ERROR:disk_cache.cc(168)] Unable to create cache
+[0325/163919.877:ERROR:shader_disk_cache.cc(620)] Shader Cache Creation failed: -2
+[0325/173655.801:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/173655.857:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/173655.859:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/173655.860:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/173656.587:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/173656.634:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/173656.691:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/173656.704:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/173656.727:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/173656.738:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/173656.746:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/173656.757:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/173656.778:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/182458.766:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/182458.783:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/182458.797:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/182503.778:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/182503.797:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0325/182503.809:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
